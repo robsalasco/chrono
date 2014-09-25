@@ -100,9 +100,6 @@ function _timer(callback)
     }
 }
 
-
- 
-// example use
 var timer;
  
 $(document).ready(function(e) 
@@ -124,7 +121,6 @@ $(document).ready(function(e)
 });
 
 $(document).keydown(function(e){
-
         switch(e.which){
         case 32:
                 timer.reset(90);
