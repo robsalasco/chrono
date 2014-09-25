@@ -122,3 +122,22 @@ $(document).ready(function(e)
     timer.reset(90);
     timer.mode(0);
 });
+
+$(document).keydown(function(e){
+
+        switch(e.which){
+        case 32:
+                timer.reset(90);
+                timer.start(1000);
+        break;
+        case 83:
+                timer.start(1000);
+        break;
+        case 68:
+                timer.stop();
+        break;
+        case 82:
+                timer.reset(90);
+        break;
+       }
+    });
